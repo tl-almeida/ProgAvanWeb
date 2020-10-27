@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form method="POST" action="#" th:action="@{/usdtobrl}" th:object="${usdtobrl}">
+<form method="POST" action="#" th:action="@{/}" th:object="${usdtobrl}">
     <p>USD Quotation Convert Rate <input class="input" type="text" placeholder="USD to BRL" th:field="*{usd}"/></p>
     <p> USD <input class="input" type="text" placeholder="U$D" th:field="*{brl}"/></p>
     <button class="button centered" type="submit" value="Submit">Convert to BRL</button>

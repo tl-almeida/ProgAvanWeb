@@ -20,14 +20,14 @@ public class CurrencyController {
 
 	}
 
-	@GetMapping("/usdtobrl")
+	@GetMapping("/")
 	  public String greetingForm(Model model) {
 	    model.addAttribute("usdtobrl", new CurrencyConverter());
 
 	    return "converter";
 	  }
 	
-	 @PostMapping("/usdtobrl")
+	 @PostMapping("/")
 	  public String greetingSubmit(@ModelAttribute CurrencyConverter currency, Model model) {
 	    model.addAttribute("usdtobrl", currency);
 	    model.addAttribute("converted", currencyDAO.converter(currency));
